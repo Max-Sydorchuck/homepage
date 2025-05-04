@@ -262,6 +262,28 @@ img {
 	margin-right: 0.25rem;
 }
 
+/*========== SOCIAL ==========*/
+.social__container {
+	display: flex;
+	justify-content: left;
+}
+
+.social__link {
+	display: inline-flex;
+	align-items: center;
+	font-size: var(--small-font-size);
+	color: var(--text-color);
+}
+
+.social__link:hover {
+	color: var(--title-color);
+}
+
+.social__icon {
+	font-size: 1.2rem;
+	margin-right: 0.25rem;
+}
+
 /*========== EDUCATION AND EXPERIENCE ==========*/
 .education__content,
 .experience__content {
@@ -311,4 +333,54 @@ img {
 
 .education__year {
 	font-size: var(--smaller-font-size);
+}
+
+/*========== SKILLS AND LANGUAGES ==========*/
+.skills__content,
+.languages__content {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.languages__content {
+	gap: 0;
+}
+
+.skills__name,
+.languages__name {
+	display: flex;
+	align-items: center;
+	margin-bottom: var(--mb-3);
+}
+
+.skills__circle,
+.languages__circle {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background-color: var(--text-color);
+	border-radius: 50%;
+	margin-right: 0.75rem;
+}
+/*========== CERTIFICATES ==========*/
+.certificate__title {
+	font-size: var(--h3-font-size);
+	margin-bottom: var(--mb-1);
+}
+
+/*========== INTERESTS ==========*/
+.interests__container {
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: var(--mb-2);
+}
+
+.interests__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.interests__icon {
+	font-size: 1.5rem;
+	color: var(--text-color-light);
+	margin-bottom: 0.25rem;
 }
