@@ -19,6 +19,7 @@ function linkAction() {
 	navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -49,6 +50,7 @@ function scrollTop() {
 	else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
+
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
